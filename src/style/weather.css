@@ -1,0 +1,63 @@
+.weather-wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgb(133, 138, 142,0.95);
+    border-radius: 1rem;
+    border: 1px inset whitesmoke;
+}
+.weathershow-wrap{
+    width: 100%;
+}
+.city-name{
+    font-size: 48px;
+    color: rgb(77, 77, 77);
+}
+.split-line{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 1px;
+}
+.weather-currentday-wrap{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.weather-nextdays-wrap{
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.weather-nextdays-wrap table td{
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.weather-nextdays-wrap table tr td:first-child{
+    padding: 0.5rem 0;
+}
+.weathertext-wrap{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weathertext-wrap svg{
+
+    width: 40px;
+    height: 40px;
+}
+@media (max-width:768px) {
+    .weather-currentday-wrap{
+        flex-direction: column;
+    }
+    .weather-currentday-wrap div{
+        margin-bottom: 0.5rem;
+    }
+    
+}
